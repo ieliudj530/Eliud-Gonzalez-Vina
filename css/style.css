@@ -111,3 +111,29 @@ ul li {
         0 1300px 0 0 #fff, 0 1300px 0 2px #b0c4de; 
     pointer-events: none;
 }
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    .carta {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    .perfil {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .perfil img {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 10px;
+    }
+    .seccion {
+        margin-top: 20px;
+    }
+    ul {
+        padding-left: 20px;
+    }
+}
