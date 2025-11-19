@@ -4,99 +4,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum Vitae | Eliud Gonzalez</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css"> 
 </head>
 <body>
-    <div class="cv-container">
-        
-        <header class="perfil">
-            <div class="nome-titulo">
-                <h1>ELIUD J. GONZALEZ VINA</h1>
-                <p class="titulo-principal">Desenvolvedor de Sistemas | Analista de Dados</p>
-            </div>
-            <img src="images/foto.jpg" alt="Foto de perfil profissional">
-        </header>
 
-        <div class="contato-resumo">
-            <section class="secao-contato">
-                <h2>Contato</h2>
+    <div class="cv-wrapper">
+        <aside class="sidebar">
+            <div class="profile-container">
+                <div class="img-border">
+                    <img src="images/foto.jpg" alt="Eliud Gonzalez">
+                </div>
+                <h1>Eliud J. Gonzalez Vina</h1>
+                <p class="role">CEO (EAInformatica) <br> DEV Jr.</p>
+            </div>
+
+            <div class="sidebar-section contact-info">
+                <h3><i class="fas fa-address-card"></i> Contato</h3>
                 <ul>
-                    <li><strong>Email:</strong> eliud.gonzalez.530@email.com</li>
-                    <li><strong>Telefone:</strong> +55 49 99183-9170</li>
-                    <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/eliud-gonzalez-viña-813327199/" target="_blank">/eliud-gonzalez-viña</a></li>
-                    <li><strong>Localização:</strong> Xanxerê, SC, Brasil</li>
+                    <li>
+                        <span class="icon"><i class="fas fa-envelope"></i></span>
+                        <span class="text">eliud.gonzalez.530@email.com</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fas fa-phone"></i></span>
+                        <span class="text">+55 49 99183-9170</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fab fa-linkedin"></i></span>
+                        <a href="https://www.linkedin.com/in/eliud-gonzalez-viña-813327199/" target="_blank" class="text">/eliud-gonzalez-viña</a>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+                        <span class="text">Xanxerê, SC, Brasil</span>
+                    </li>
                 </ul>
-            </section>
+            </div>
+
+            <div class="sidebar-section">
+                <h3><i class="fas fa-code"></i> Habilidades</h3>
+                <div class="skills-tags">
+                    <span>JavaScript</span>
+                    <span>HTML5 / CSS3</span>
+                    <span>Spring Boot</span>
+                    <span>Power BI</span>
+                    <span>Excel Avançado</span>
+                    <span>Gestão de Projetos</span>
+                    <span>Liderança</span>
+                </div>
+            </div>
+
+            <div class="sidebar-section education">
+                <h3><i class="fas fa-graduation-cap"></i> Formação</h3>
+                <div class="edu-item">
+                    <strong>Desenvolvimento Web</strong>
+                    <p>SENAC (Cursando)</p>
+                </div>
+                <div class="edu-item">
+                    <strong>Desenvolvedor de Sistemas</strong>
+                    <p>SENAC</p>
+                </div>
+                <div class="edu-item">
+                    <strong>Professor de Matemáticas</strong>
+                    <p>UPEL</p>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3><i class="fas fa-certificate"></i> Certificações</h3>
+                <ul class="simple-list">
+                    <li>Análise de Dados & Modelagem (Escola do Trabalhador)</li>
+                    <li>Gestão Estratégica e Liderança (União Consultoria)</li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="main-content">
             
-            <section class="secao-resumo">
-                <h2>Resumo Profissional</h2>
+            <section class="summary-section">
+                <h2 class="section-title">Resumo Profissional</h2>
                 <p>
-                    <strong>Desenvolvedor de sistemas e web</strong> com foco na criação e automação de processos digitais. Proficiência em desenvolvimento de aplicações e sites, complementada por um **domínio avançado em análise de dados** com ferramentas como **Excel e Power BI**. Destaco-me pela **pontualidade, responsabilidade** e uma paixão por otimização de processos e implementação de **soluções inovadoras** que geram eficiência e valor para o negócio.
+                    Empreendedor e <strong>Desenvolvedor Full Stack Júnior</strong> com experiência na criação e gestão de soluções digitais. <strong>CEO e Founder da EAInformatica</strong>, especializada no desenvolvimento de sistemas de gestão e sites utilizando <strong>JavaScript</strong> e tecnologias web modernas. Proficiência em automação de processos, complementada por habilidades avançadas em <strong>Análise de Dados (Excel, Power BI)</strong> e gestão de projetos. Busco aplicar minha visão estratégica e expertise técnica para impulsionar a eficiência e o valor nos projetos.
                 </p>
             </section>
-        </div>
 
-        <main class="conteudo-principal">
-
-            <section class="secao-experiencia">
-                <h2>Experiência Profissional</h2>
-
-                <div class="item-experiencia">
-                    <h3>Professor de Estatística e Assistente Administrativo</h3>
-                    <p class="empresa-local">UNIVERSIDAD SIMON RODRIGUES | Maturín, Venezuela</p>
-                    <p class="periodo">2018 – 2019</p>
-                    <ul>
-                        <li><span class="bullet-point">Ministração de aulas</span> de Estatística, ensinando análise de dados e métodos estatísticos.</li>
-                        <li><span class="bullet-point">Elaboração e aplicação de pesquisas</span> e questionários para coleta de dados acadêmicos e administrativos.</li>
-                        <li><span class="bullet-point">Análise e interpretação de dados</span> para produção de relatórios e suporte à **tomada de decisão**.</li>
-                        <li><span class="bullet-point">Suporte na administração acadêmica</span> e coordenação de processos internos.</li>
-                    </ul>
-                </div>
+            <section class="experience-section">
+                <h2 class="section-title">Experiência Profissional</h2>
                 
-                <div class="item-experiencia">
-                    <h3>Operador Polivalente da Indústria Têxtil</h3>
-                    <p class="empresa-local">GCA Embalagem de Ráfia LTDA | Xanxerê, SC</p>
-                    <p class="periodo">2020 – 2025</p>
-                    <ul>
-                        <li><span class="bullet-point">Operação de máquinas</span> de produção, garantindo **eficiência e qualidade** nos processos.</li>
-                        <li><span class="bullet-point">Inspeção e Controle de Qualidade</span> dos produtos finais.</li>
-                        <li><span class="bullet-point">Assistência em tarefas administrativas e de logística</span>, demonstrando **flexibilidade e polivalência**.</li>
-                        <li><span class="bullet-point">Organização e manutenção</span> do ambiente de trabalho seguro e limpo.</li>
-                    </ul>
-                </div>
+                <div class="timeline">
+                    
+                    <div class="timeline-item highlight">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="job-header">
+                                <h3>CEO e Founder</h3>
+                                <span class="date">2024 – Atual</span>
+                            </div>
+                            <p class="company">EAInformatica (Empreendimento Próprio)</p>
+                            <ul>
+                                <li><strong>Liderança Estratégica:</strong> Definição de visão, metas e estratégias de negócios.</li>
+                                <li><strong>Desenvolvimento:</strong> Criação de sistemas de gestão e websites do zero (JS/Web).</li>
+                                <li><strong>Gestão de Projetos:</strong> Ciclo de vida completo do software, da concepção à entrega.</li>
+                            </ul>
+                        </div>
+                    </div>
 
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="job-header">
+                                <h3>Operador de Máquinas</h3>
+                                <span class="date">Set 2025 – Atual</span>
+                            </div>
+                            <p class="company">Rafitec | Xanxerê, SC</p>
+                            <ul>
+                                <li>Operação eficiente de máquinas de produção e alto volume de output.</li>
+                                <li>Aplicação de procedimentos de controle de qualidade rigorosos.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="job-header">
+                                <h3>Professor de Estatística</h3>
+                                <span class="date">2018 – 2019</span>
+                            </div>
+                            <p class="company">Universidad Simon Rodrigues | Venezuela</p>
+                            <ul>
+                                <li>Ministração de aulas de Estatística e análise de dados.</li>
+                                <li>Elaboração de pesquisas para suporte à decisão administrativa.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
             </section>
-            
-            <section class="secao-formacao">
-                <h2>Formação e Cursos</h2>
-                
-                <div class="item-formacao">
-                    <h3>Desenvolvimento Web (Cursando)</h3>
-                    <p class="instituicao">SENAC</p>
-                </div>
-                
-                <div class="item-formacao">
-                    <h3>Desenvolvedor de Sistemas</h3>
-                    <p class="instituicao">SENAC</p>
-                </div>
-                
-                <div class="item-formacao">
-                    <h3>Professor de Matemáticas</h3>
-                    <p class="instituicao">UPEL</p>
-                </div>
-                
-                <div class="item-cursos">
-                    <h3>Cursos Complementares (Destaques)</h3>
-                    <ul>
-                        <li>**Análise de Dados:** Introdução à Análise de Dados, Preparar Dados para Análise, Modelagem de Dados (Escola do Trabalhador).</li>
-                        <li>**Gestão e Liderança:** Gestor de Projetos, Liderança, Gestão de Produção (União Consultoria).</li>
-                        <li>**Ferramentas:** Curso de Excel (Escola do Trabalhador).</li>
-                    </ul>
-                </div>
 
-            </section>
-            
         </main>
     </div>
 </body>
