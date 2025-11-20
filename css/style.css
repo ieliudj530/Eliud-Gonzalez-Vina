@@ -359,3 +359,86 @@ body {
         box-shadow: none;
     }
 }
+
+/* --- ESTILOS NUEVOS AÑADIDOS --- */
+
+/* Idiomas (Barras de progreso) */
+.lang-item {
+    margin-bottom: 15px;
+}
+
+.lang-label {
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-light);
+    font-size: 0.85rem;
+    margin-bottom: 5px;
+}
+
+.lang-label small {
+    color: var(--accent);
+}
+
+.progress-bar {
+    width: 100%;
+    height: 6px;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.progress-bar .fill {
+    height: 100%;
+    background-color: var(--accent);
+    box-shadow: 0 0 8px var(--accent); /* Efecto Neón */
+}
+
+/* Grid de Proyectos (Tarjetas modernas) */
+.projects-section {
+    margin-bottom: 50px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Responsive */
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    position: relative;
+    top: 0;
+}
+
+.project-card:hover {
+    top: -5px; /* Efecto de flotar al pasar el mouse */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    border-color: var(--accent);
+}
+
+.project-card h4 {
+    color: var(--primary-dark);
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.tech-stack-mini {
+    color: var(--accent);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+.project-card p {
+    font-size: 0.9rem;
+    color: #64748b;
+    line-height: 1.5;
+}
