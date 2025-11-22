@@ -313,132 +313,101 @@ body {
 /* --- RESPONSIVE DESIGN --- */
 @media (max-width: 850px) {
     .cv-wrapper {
-        grid-template-columns: 1fr;
+        max-width: 900px;
+        grid-template-columns: 260px 1fr;
     }
-    
     .sidebar {
-        padding: 30px;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 40px;
-        justify-content: space-between;
+        padding: 28px 20px;
     }
-    
-    .sidebar-section {
-        flex: 1 1 45%; /* 2 columnas dentro del sidebar en móvil */
-    }
-
-    .profile-container {
-        flex: 1 1 100%;
-        margin-bottom: 20px;
-    }
-    
-    .timeline {
-        padding-left: 20px;
-    }
-    
     .main-content {
-        padding: 30px;
+        padding: 36px 28px;
+    }
+    .img-border {
+        width: 120px;
+        height: 120px;
     }
 }
 
 @media (max-width: 600px) {
-    .sidebar {
-        flex-direction: column;
-    }
-    .job-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 5px;
-    }
+    /* Asegura márgenes iguales a ambos lados y centrado */
     body {
-        padding: 0;
+        padding: 12px; /* simétrico: igual margen izquierdo y derecho */
     }
+
     .cv-wrapper {
-        border-radius: 0;
+        grid-template-columns: 1fr;
+        width: 100%;
+        max-width: 700px;
+        margin: 0 auto; /* centra horizontalmente */
         box-shadow: none;
+        border-radius: 8px;
+        overflow: visible;
     }
-}
 
-/* --- ESTILOS NUEVOS AÑADIDOS --- */
+    /* Sidebar pasa arriba, diseño más compacto */
+    .sidebar {
+        width: 100%;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
 
-/* Idiomas (Barras de progreso) */
-.lang-item {
-    margin-bottom: 15px;
-}
+    /* Perfil en fila compacta para ahorrar espacio */
+    .profile-container {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        text-align: left;
+    }
+    .img-border {
+        width: 88px;
+        height: 88px;
+        margin: 0;
+        padding: 3px;
+    }
+    .profile-container h1 {
+        font-size: 1.05rem;
+        margin-bottom: 0;
+    }
+    .profile-container .role {
+        font-size: 0.78rem;
+    }
 
-.lang-label {
-    display: flex;
-    justify-content: space-between;
-    color: var(--text-light);
-    font-size: 0.85rem;
-    margin-bottom: 5px;
-}
+    /* Contenido principal con padding equilibrado */
+    .main-content {
+        padding: 18px;
+    }
+    .section-title {
+        font-size: 1.4rem;
+    }
 
-.lang-label small {
-    color: var(--accent);
-}
+    /* Proyectos y timeline en una columna */
+    .project-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    .project-card {
+        padding: 12px;
+    }
 
-.progress-bar {
-    width: 100%;
-    height: 6px;
-    background-color: rgba(255,255,255,0.1);
-    border-radius: 3px;
-    overflow: hidden;
-}
+    .timeline {
+        padding-top: 8px;
+    }
+    .timeline-item {
+        padding: 12px 0;
+    }
 
-.progress-bar .fill {
-    height: 100%;
-    background-color: var(--accent);
-    box-shadow: 0 0 8px var(--accent); /* Efecto Neón */
-}
+    /* Ajustes generales para listas y tags */
+    .skills-tags span {
+        font-size: 0.72rem;
+        padding: 4px 8px;
+    }
+    .contact-info li {
+        font-size: 0.86rem;
+    }
 
-/* Grid de Proyectos (Tarjetas modernas) */
-.projects-section {
-    margin-bottom: 50px;
-}
-
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Responsive */
-    gap: 20px;
-}
-
-.project-card {
-    background-color: #f8fafc;
-    border: 1px solid #e2e8f0;
-    padding: 20px;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-    position: relative;
-    top: 0;
-}
-
-.project-card:hover {
-    top: -5px; /* Efecto de flotar al pasar el mouse */
-    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-    border-color: var(--accent);
-}
-
-.project-card h4 {
-    color: var(--primary-dark);
-    font-family: var(--font-heading);
-    font-size: 1rem;
-    margin-bottom: 5px;
-    font-weight: 700;
-}
-
-.tech-stack-mini {
-    color: var(--accent);
-    font-size: 0.75rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    letter-spacing: 0.5px;
-}
-
-.project-card p {
-    font-size: 0.9rem;
-    color: #64748b;
-    line-height: 1.5;
+    /* Si quieres margen derecho mayor, modifica aquí (ejemplo: 20px) */
+    /* .cv-wrapper { padding-right: 20px; } */
 }
